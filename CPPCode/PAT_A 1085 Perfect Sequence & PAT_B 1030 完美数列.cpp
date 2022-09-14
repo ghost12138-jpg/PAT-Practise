@@ -22,8 +22,7 @@ int main(){
             upper = (upper+N+1)/2;
         }
         while(upper>N-1||num[upper]>tmax)upper--;
-        
-        //如果每次按顺序搜索会有超时的可能
+       //如果每次按顺序搜索会有超时的可能
 //         while(upper<N&&num[upper]<=tmax)upper++;
         if(upper-lower + 1>ans){
             ans = 1 + upper-lower;
